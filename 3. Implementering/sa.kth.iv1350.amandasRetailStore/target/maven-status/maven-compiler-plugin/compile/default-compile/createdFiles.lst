@@ -1,0 +1,14 @@
+se\kth\iv1350\view\View.class
+se\kth\iv1350\integration\database\MemberCatalog.class
+se\kth\iv1350\integration\DBhandler.class
+se\kth\iv1350\integration\Item.class
+se\kth\iv1350\integration\database\ExternalAccounting.class
+se\kth\iv1350\controller\Controller.class
+se\kth\iv1350\integration\dto\MemberDTO.class
+se\kth\iv1350\integration\Printer.class
+se\kth\iv1350\integration\Member.class
+se\kth\iv1350\integration\dto\ItemDTO.class
+se\kth\iv1350\model\Sale.class
+se\kth\iv1350\integration\database\ExternalInventory.class
+se\kth\iv1350\model\Register.class
+se\kth\iv1350\startup\Main.class

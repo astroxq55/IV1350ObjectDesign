@@ -10,16 +10,25 @@ import se.kth.iv1350.model.Sale;
 
 public class Controller {
     private DBhandler dbHandler;
-    private Sale thisSale;
+    private Sale sale;
     
     
     
     
     /**
-     * 
+     * constructor for the class Controller
      */
     public Controller() {
         this.dbHandler = new DBhandler();
         
     }
+    
+    /**
+     * Creates a Sale object to initiate sale process
+     */
+    public void initSale() {
+        sale = new Sale();
+    }
+    
+    
 }

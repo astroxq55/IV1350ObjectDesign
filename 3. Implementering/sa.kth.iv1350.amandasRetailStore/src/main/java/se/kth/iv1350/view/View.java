@@ -7,8 +7,8 @@ public class View {
     private Controller controller;
     
     /**
-     * 
-     * @param contr 
+     * constructor for the View class
+     * @param contr a controller object
      */
     public View(Controller contr) {
         this.controller = contr;
@@ -16,20 +16,21 @@ public class View {
     }
     
     /**
-     * 
+     * Runs a fake sample sale so show of the POS program
      */
-    public void initiateFakeSampleSale() {
-        System.out.println("Startup");
+    public void initFakeSampleSale() {
         
         System.out.println("Initiating sale");
+        controller.initSale();
         
-        System.out.println("Adding items");
+        System.out.println("Start scanning items:");
+        
         
         System.out.println("Payment time");
+        
         
         System.out.println("Finish sale and update DB system");
         
     }
-    
     
 }

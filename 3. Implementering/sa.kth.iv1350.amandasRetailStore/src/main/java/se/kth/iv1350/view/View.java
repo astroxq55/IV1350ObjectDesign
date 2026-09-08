@@ -23,6 +23,7 @@ public class View {
         System.out.println("Initiating sale");
         controller.initSale();
         
+        // scanning items
         System.out.println("Start scanning items:");
         
         
@@ -30,6 +31,8 @@ public class View {
         
         
         System.out.println("Finish sale and update DB system");
+        
+        System.out.println("Sale is finished.");
         
     }
     

@@ -34,6 +34,8 @@ public class View {
         
         System.out.println("Sale is finished.");
         
+        System.out.println("THE END");
+        
     }
     
 }

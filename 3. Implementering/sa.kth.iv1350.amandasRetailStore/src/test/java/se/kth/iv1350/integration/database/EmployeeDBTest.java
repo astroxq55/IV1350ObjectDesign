@@ -49,7 +49,7 @@ public class EmployeeDBTest {
     }
     
     @Test
-    public void testCashierIdCalledTwiceReturnsSameId() {
+    public void testEmployeeIdCalledTwiceReturnsSameId() {
         assertEquals(db.getEmployeeId(), db.getEmployeeId(), "Get ID Method call twice generated different result.");
     }
 

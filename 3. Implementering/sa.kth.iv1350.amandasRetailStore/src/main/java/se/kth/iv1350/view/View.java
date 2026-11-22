@@ -35,9 +35,6 @@ public class View {
         System.out.println("THE END");
         
     }
-    
-    public int getEmployeeId() {
-        return controller.getEmployeeId();
-    }
+
     
 }

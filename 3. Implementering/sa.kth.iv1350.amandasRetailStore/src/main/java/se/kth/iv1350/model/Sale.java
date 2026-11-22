@@ -1,25 +1,23 @@
 
 package se.kth.iv1350.model;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import se.kth.iv1350.integration.Item;
+import se.kth.iv1350.integration.dto.SaleDTO;
 
 
 public class Sale {
-    private LocalDateTime saleTime;
-    private int cachierID;
-    private List<Item> saleLog = new ArrayList<>();
+    private List<Item> basket;
     private Cost cost;
-    private int numberOfArticles = 0;
-    
-    
+    private SaleDTO saleDTO;
     
     /**
      * Constructor that creates a Sale item
      */
-    public Sale() {
-        this.saleTime = LocalDateTime.now();
+    public Sale(int employeeId) {
+        this.basket = new ArrayList<>();
+        this.cost = new Cost();
+        this.saleDTO = new SaleDTO(employeeId);
     }
 }

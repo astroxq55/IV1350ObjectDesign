@@ -20,14 +20,17 @@ public class Controller {
      */
     public Controller() {
         this.dbHandler = new DBhandler();
-        
     }
     
     /**
      * Creates a Sale object to initiate sale process
      */
     public void initSale() {
-        sale = new Sale();
+        sale = new Sale(getEmployeeId());
+    }
+    
+    public int getEmployeeId() {
+       return dbHandler.getEmployeeId();
     }
     
     

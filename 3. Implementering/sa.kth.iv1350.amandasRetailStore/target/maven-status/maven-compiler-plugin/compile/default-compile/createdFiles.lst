@@ -13,4 +13,5 @@ se\kth\iv1350\integration\dto\ItemDTO.class
 se\kth\iv1350\model\Sale.class
 se\kth\iv1350\integration\database\ExternalInventory.class
 se\kth\iv1350\model\Register.class
+se\kth\iv1350\integration\database\EmployeeDB.class
 se\kth\iv1350\startup\Main.class

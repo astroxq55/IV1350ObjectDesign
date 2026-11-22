@@ -5,6 +5,7 @@ import se.kth.iv1350.controller.Controller;
 
 public class View {
     private Controller controller;
+    private int currentCashierID;
     
     /**
      * constructor for the View class
@@ -23,12 +24,9 @@ public class View {
         System.out.println("Initiating sale");
         controller.initSale();
         
-        // scanning items
         System.out.println("Start scanning items:");
         
-        
         System.out.println("Payment time");
-        
         
         System.out.println("Finish sale and update DB system");
         
@@ -36,6 +34,10 @@ public class View {
         
         System.out.println("THE END");
         
+    }
+    
+    public int getEmployeeId() {
+        return controller.getEmployeeId();
     }
     
 }

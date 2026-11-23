@@ -6,16 +6,19 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import se.kth.iv1350.integration.database.EmployeeDB;
+import se.kth.iv1350.integration.database.ItemDB;
 
 public class DBhandlerTest {
     
     private DBhandler dbHandler;
     private EmployeeDB employeeDB;
+    private ItemDB itemDB;
     
     @BeforeEach
     public void setUp() {
         employeeDB = new EmployeeDB();
-        dbHandler = new DBhandler(employeeDB);
+        itemDB = new ItemDB();
+        dbHandler = new DBhandler(employeeDB, itemDB);
     }
     
     @AfterEach
@@ -38,7 +41,7 @@ public class DBhandlerTest {
     
     @Test
     public void testNullEmployeeDbThrowsNullPointerExceptionWhenUsed() {
-        DBhandler handlerWithNull = new DBhandler(null);
+        DBhandler handlerWithNull = new DBhandler(null, null);
         assertThrows(NullPointerException.class,
                 () -> handlerWithNull.getEmployeeId(),
                 "Using a DBhandler created with null should throw NullPointerException.");
@@ -51,5 +54,7 @@ public class DBhandlerTest {
         assertEquals(employeeDbId, dbHandlerId, 
                 "ID received from dbHandler and directly from EmployeeDB separately doesn't match.");
     }
+    
+    //TODO: write a bunch of tests for ItemDB
     
 }

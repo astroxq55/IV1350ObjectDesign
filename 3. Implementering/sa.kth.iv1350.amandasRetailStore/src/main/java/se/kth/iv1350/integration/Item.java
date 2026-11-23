@@ -9,7 +9,7 @@ import se.kth.iv1350.integration.dto.ItemDTO;
 
 public class Item {
     private ItemDTO itemDTO;
-    private int quantity = 1;
+    private int quantity;
     
     
     /**

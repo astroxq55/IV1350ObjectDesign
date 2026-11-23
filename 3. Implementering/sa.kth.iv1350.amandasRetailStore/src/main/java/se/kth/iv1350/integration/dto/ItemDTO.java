@@ -10,9 +10,6 @@ public class ItemDTO {
     private final String supplier;
     private final double price;
     private final TaxRate taxRate;
-    //private double taxAmount;
-    //private double priceWithTax;
-
     
     /**
      * Constructor for the class ItemDTO
@@ -27,15 +24,7 @@ public class ItemDTO {
         this.supplier = supplier;
         this.price = price;
         this.taxRate = rate;
-        //this.priceWithTax = calculatePriceWithTax(this.price);
     }
-    
-    //private double calculateTaxAmount(double price) {
-    //    return price*taxRate.getRate();
-    //}
-    //private double calculatePriceWithTax(double price) {
-    //    return price*(1 + taxRate.getRate());
-    //}
     
     /**
      * get function for itemID
@@ -84,21 +73,5 @@ public class ItemDTO {
     public double getTaxRate() {
         return this.taxRate.getRate();
     }
-    
-    /**
-     * get function for TaxAmount, item price is excluded
-     * @return value of TaxAmount
-     */
-    //public double getTaxAmount() {
-    //    return taxAmount;
-    //}
-    
-    /**
-     * get function for PriceWithTax, full price with tax included
-     * @return value of PriceWithTax
-     */
-    //public double getPriceWithTax() {
-    //    return priceWithTax;
-    //}
     
 }

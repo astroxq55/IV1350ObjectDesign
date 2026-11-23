@@ -4,6 +4,7 @@ package se.kth.iv1350.startup;
 import se.kth.iv1350.controller.Controller;
 import se.kth.iv1350.view.View;
 import se.kth.iv1350.integration.database.EmployeeDB;
+import se.kth.iv1350.integration.database.ItemDB;
 import se.kth.iv1350.integration.DBhandler;
 
 
@@ -13,7 +14,8 @@ public class Main {
         
         // Create all Data Bases and DB Handler
         EmployeeDB employeeDB = new EmployeeDB();
-        DBhandler dbHandler = new DBhandler(employeeDB);
+        ItemDB itemDB = new ItemDB();
+        DBhandler dbHandler = new DBhandler(employeeDB, itemDB);
 
         // Initiate program
         Controller controller = new Controller(dbHandler);

@@ -29,7 +29,7 @@ public class EmployeeDB {
      * @param employeeId unique ID number of employee
      * @return Cashier Name
      */
-    public String getEmployeeName(Integer employeeId) {
+    public String getEmployeeName(int employeeId) {
         return employees.get(employeeId);
     } 
     

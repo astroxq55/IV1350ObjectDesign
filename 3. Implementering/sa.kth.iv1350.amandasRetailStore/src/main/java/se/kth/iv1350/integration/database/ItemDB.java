@@ -30,11 +30,11 @@ public class ItemDB {
     } 
     
     private void addItem(ItemDTO item) {
-        items.put(item.getItemID(), item);
+        items.put(item.getItemId(), item);
     }
     
     /**
-     * Each items contains the information:
+     * Each item contains the information:
      * (ItemId, Name, Description, Supplier, Price (excluding VAT), Tax Rate)
      */
     private void fillDatabaseWithData() {
@@ -63,7 +63,7 @@ public class ItemDB {
         addItem(new ItemDTO(200008, "Quark", "Plain, 500 g", "Northern Dairy", 25.0, TaxRate.LOW));
         addItem(new ItemDTO(200009, "Bread", "Sliced loaf, 750 g", "Southern Bakery", 32.0, TaxRate.LOW));
         addItem(new ItemDTO(200010, "Crispbread", "Whole grain, 260 g", "Southern Bakery", 20.0, TaxRate.LOW));
-        addItem(new ItemDTO(200011, "Muesli", "Fruit and nuts, 750 g", "Breakfast Brands", 42.0, TaxRate.LOW));
+        addItem(new ItemDTO(200011, "Musli", "Fruit and nuts, 750 g", "Breakfast Brands", 42.0, TaxRate.LOW));
         addItem(new ItemDTO(200012, "Pasta", "Penne, 500 g", "Pasta Factory", 18.0, TaxRate.LOW));
 
         // Hygiene and household (300xxx)

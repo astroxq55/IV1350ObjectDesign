@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package se.kth.iv1350.integration;
 
 import se.kth.iv1350.integration.dto.ItemDTO;
@@ -17,6 +13,7 @@ public class Item {
      */
     public Item(ItemDTO itemDTO) {
         this.itemDTO = itemDTO;
+        this.quantity = 1;
     }
     
     /**
@@ -41,6 +38,10 @@ public class Item {
      */
     public int getQuantity() {
         return quantity;
+    }
+    
+    public void increaseQuantity(int amount) {
+        this.quantity += amount;
     }
     
 }

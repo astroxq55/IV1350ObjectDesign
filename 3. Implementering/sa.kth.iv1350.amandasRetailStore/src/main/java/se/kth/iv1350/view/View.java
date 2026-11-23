@@ -21,19 +21,22 @@ public class View {
      */
     public void initFakeSampleSale() {
         
-        System.out.println("Initiating sale");
+        System.out.println(">Cashier is Initiating sale");
         controller.initSale();
         
-        System.out.println("Start scanning items:");
+        System.out.println(">Cashier Starts scanning items:");
+        scanItems(200001, 1);
         
-        System.out.println("Payment time");
+        System.out.println(">Cashier is collecting Payment");
         
-        System.out.println("Finish sale and update DB system");
+        System.out.println(">Cashier Finish update DB system with saleLog");
         
-        System.out.println("Sale is finished.");
+        System.out.println(">Cashier finished sale.");
         
-        System.out.println("THE END");
-        
+    }
+    
+    private void scanItems(int itemId, int amount) {
+        controller.processScannedItem(itemId, amount);
     }
 
     

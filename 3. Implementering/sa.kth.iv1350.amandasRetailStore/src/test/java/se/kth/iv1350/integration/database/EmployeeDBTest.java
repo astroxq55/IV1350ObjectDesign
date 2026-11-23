@@ -31,11 +31,6 @@ public class EmployeeDBTest {
         assertNull(db.getEmployeeName(999999), "None-existant ID returned a name not equal to Null.");
     }
     
-    @Test
-    public void testNullIdReturnsNull() {
-        assertNull(db.getEmployeeName(null), "Null ID did not return Null.");
-    }
-    
     @Test 
     public void testReturnedIdHasAName() {
         Integer id = db.getEmployeeId();

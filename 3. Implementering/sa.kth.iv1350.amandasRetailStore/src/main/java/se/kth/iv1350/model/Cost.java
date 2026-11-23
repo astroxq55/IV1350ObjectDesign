@@ -16,10 +16,5 @@ class Cost {
         this.taxAmount = 0;
         this.currency = "SEK";
     }
-    
-    public Cost(String currencyName) {
-        this.saleAmount = 0;
-        this.taxAmount = 0;
-        this.currency = currencyName;
-    }
+
 }

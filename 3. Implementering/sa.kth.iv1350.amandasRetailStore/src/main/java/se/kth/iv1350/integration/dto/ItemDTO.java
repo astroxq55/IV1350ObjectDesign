@@ -4,7 +4,7 @@ package se.kth.iv1350.integration.dto;
 import se.kth.iv1350.integration.database.TaxRate;
 
 public class ItemDTO {
-    private final int itemID;
+    private final int itemId;
     private final String name;
     private final String description;
     private final String supplier;
@@ -17,8 +17,8 @@ public class ItemDTO {
      * @param name given string value for given item
      * @param price cost of that item without tax
      */
-    public ItemDTO(int itemID, String name, String description, String supplier, double price, TaxRate rate){
-        this.itemID = itemID;
+    public ItemDTO(int itemId, String name, String description, String supplier, double price, TaxRate rate){
+        this.itemId = itemId;
         this.name = name;
         this.description = description;
         this.supplier = supplier;
@@ -30,8 +30,8 @@ public class ItemDTO {
      * get function for itemID
      * @return value of itemID
      */
-    public int getItemID() {
-        return this.itemID;
+    public int getItemId() {
+        return this.itemId;
     }
     
     /**
